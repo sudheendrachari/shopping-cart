@@ -1,0 +1,30 @@
+@import "../../../styles/sass/main.scss";
+.listing{
+	width: 1000px;
+	margin: 0 auto;
+	.header{
+		border-bottom: 1px solid #efefef;
+		margin-bottom: 20px;
+		p{
+			display: inline-block;
+			margin: 10px 0;
+			font-size: 20px;
+		}
+		button{
+			@include btn(3px);
+			float: right;
+		    margin: 10px 0;
+		    font-size: 15px;
+		    line-height: 20px;
+		    background: $blue;
+	        color: white;
+		}
+	}
+	.cart-count{
+		display: inline-block;
+		height: 20px;
+		width: 20px;
+		border-radius: 10px;
+		background: #017bcc;
+	}
+}

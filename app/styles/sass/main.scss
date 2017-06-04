@@ -1,0 +1,21 @@
+//constants
+
+$blue: #0099ff;
+$gray: #efefef;
+$green: #70c35d;
+
+//app level styles
+
+body{
+	font-family: Palatino sans-serif;
+}
+
+@mixin btn($r: 3px) {
+	border-radius: $r;
+	border: 1px solid #0099ff;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+button:focus {outline:0;}

@@ -1,0 +1,33 @@
+@import "../../../styles/sass/main.scss";
+.summary{
+	width: 300px;
+	float: right;
+	border: 1px solid $gray;
+	p{
+		font-size: 15px;
+		margin-left: 10px;
+	}
+	.row{
+		margin-bottom: 5px;
+		> div{
+			display: inline-block;
+		}
+		.name{
+			width: 120px;
+			margin-left: 10px
+		}
+		.seperator{
+			width: 50px;
+		}
+		.amount{
+			width: 100px;
+			text-align: right;
+		}
+	}
+	.total{
+		background: $gray;
+		color: black;
+		margin-bottom: 0;
+		padding: 5px 0;
+	}
+}

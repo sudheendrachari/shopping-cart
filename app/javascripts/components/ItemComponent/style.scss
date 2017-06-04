@@ -1,0 +1,83 @@
+@import "../../../styles/sass/main.scss";
+.item{
+	width: 235px;
+	height: 250px;
+	border: 1px solid $gray;
+	display: inline-block;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	&:nth-child(4n+2) {
+	  margin-left: 0;
+	}
+	.wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 190px;
+		position: relative;
+		.banner{
+			position: absolute;
+			top: 30px;
+			padding: 3px 5px;
+			font-size: 12px;
+			background-color: #70c35d;
+			left: 0;
+			color: white;
+		}
+		.badge{
+			position: absolute;
+			top: 0;
+			right: 0px;
+			padding: 15px 15px;
+			background: $blue;
+			color: white;
+			border-radius: 0 0 0 100%;
+			line-height: 10px;
+			span{
+				position: absolute;
+				top: 10px;
+			}
+		}
+		.img{
+			width: 140px;
+			height: 140px;
+			background: url("https://store.lexisnexis.com.au/__data/media/catalog/thumb//placeholder.jpg");
+			background-size: 140px;
+		}
+	}
+	.details{
+		height: 60px;
+		background: $gray;
+		padding: 0 10px;
+		> div{
+			position: relative;
+		}
+		.name{
+			top: 5px
+		}
+		.other{
+			top: 15px;
+		}
+		.price{
+			display: inline-block;
+			.original{
+				text-decoration: line-through;
+				text-decoration-color: red;	
+				font-style: italic;
+			}
+		}
+		.add-to-cart{
+			@include btn(2px);
+			display: inline-block;
+			float: right;
+			cursor: pointer;
+			background: $gray;
+			color: $blue;
+			&:hover{
+				background: $blue;
+				color: white;
+			}
+		}
+	}
+}
